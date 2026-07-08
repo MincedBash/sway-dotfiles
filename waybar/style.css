@@ -1,0 +1,59 @@
+window#waybar {
+	font-family: AnomalyMono;
+	font-size: 16px;
+	border-radius: 14px;
+	background: transparent;
+}
+
+.modules-center{
+	font-size: 25;
+	background-color: #1e1e2e;
+	color: #ebbcba;
+	min-width: 110px;
+	border-radius: 20px;
+}
+
+	
+
+/*#clock{
+	font-size: 35;
+	background-color: #1e1e2e;
+	color: #ebbcba;
+	min-width: 110px;
+	border-radius: 20px;
+}
+ #workspaces, #cpu, #battery, #load, #memory{
+	font-size: 25;
+	font-family: AnomalyMono;
+	font-weight: 600;
+	color: #ebbcba;
+}
+
+.modules-right{
+	background-color: #1e1e2e;
+	min-width: 210px;
+	border-radius: 18px;
+}
+
+#workspaces{
+	background-color: #1e1e2e;
+	border-radius: 20px;
+}
+
+#workspaces button{
+	color: #ebbcba;
+}
+
+#workspaces button.focused{
+	background-color: #2E2E47;
+	border-radius: 20px;
+}
+
+#workspaces button:hover{
+    background: #65659A;
+    border-radius: 20px;
+}
+
+#load {
+	min-width:60px;
+} */

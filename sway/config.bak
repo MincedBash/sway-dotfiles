@@ -9,15 +9,10 @@ output * bg /usr/share/backgrounds/custom/wall18.jpg fill
 output HDMI-A-1 resolution 1920x1080 position 1920,0 
 
 exec swayidle -w \
-	timeout 20 'brightnessctl -d "platform::kbd_backlight" get > /run/user/$UID/kbd_backlight_state && brightnessctl -d "platform::kbd_backlight" set 0' \
-		resume 'brightnessctl -d "platform::kbd_backlight" set $(cat /run/user/$UID/kbd_backlight_state)' \
-	timeout 90 '~/.local/bin/idle-brightness dim' \
-		resume '~/.local/bin/idle-brightness restore' \
-    timeout 100 'swaylock -f -c 000000' \
-    timeout 170 'swaymsg "output * power off"' \
-        resume 'swaymsg "output * power on"' \
-    timeout 450 'systemctl suspend-then-hibernate' \
-    before-sleep 'swaylock -f -c 000000'
+          timeout 100 'swaylock -f -c 000000' \
+          timeout 170 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+		  timeout 450 'systemctl suspend-then-hibernate' \
+          before-sleep 'swaylock -f -c 000000'
 
    input type:keyboard {
        xkb_layout "us,tr"

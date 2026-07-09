@@ -13,5 +13,6 @@ cp -v swaylock ~/.swaylock
 
 sudo cp -rv SilentSDDM /usr/share/sddm/themes/silentbeef
 sudo cp -rv wallpaps /usr/share/backgrounds/beef
+sudo mkdir /usr/share/fonts/beef && sudo cp fonts/* /usr/share/fonts/beef/
 echo -e "\n\nProcess Complete, enjoy my theme."
 sleep 2s && exit

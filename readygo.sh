@@ -12,7 +12,7 @@ sleep 0.5
 mv -v kitty nvim sway waybar ~/.config/
 mv -v swaylock ~/.swaylock
 
-sudo mv SilentSDDM /usr/share/sddm/themes/SilentSDDM
-
+sudo mv -v SilentSDDM /usr/share/sddm/themes/SilentSDDM
+sudo mv -v wallpaps /usr/share/background/beef
 echo -e "\n\nProcess Complete, enjoy my theme."
 sleep 2s && exit

@@ -29,3 +29,10 @@ sudo nvim /etc/sddm.conf
 Current=silent
 ```
 Current=silent should work but if it's not, try entering the whole path. 
+___
+
+### Information
+I am copying fonts into /usr/share/fonts because SDDM sometimes can't read from ~/.local/share/fonts. At least it's how it happened with me and moving those fonts into system fonts solved the case for me. If you don't want it, you can simply edit readygo.sh.  
+==> Change this line `sudo mkdir /usr/share/fonts/beef && sudo cp fonts/* /usr/share/fonts/beef`  
+to  
+==> `mkdir ~/.local/share/fonts && cp fonts/* ~/.local/share/fonts`

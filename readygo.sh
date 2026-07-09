@@ -6,16 +6,13 @@ fi
 
 echo "Upgrading and Installing required packages"
 sudo pacman -Syu $(cat pkgs.txt)
-sudo -k
 echo -e "\n\nCopying to .config"
 sleep 0.5
-cp -rv kitty nvim sway waybar ~/.config/
-cp -rv swaylock ~/.swaylock
+mv -v kitty nvim sway waybar rofi ~/.config/
+mv -v swaylock ~/.swaylock
+mv -v rofithemes ~/.local/share/rofi
 
 sudo cp -rv SilentSDDM /usr/share/sddm/themes/silentbeef
-sudo -k
-sudo cp -rv wallpaps /usr/share/background/beef
-sudo -k
+sudo cp -rv wallpaps /usr/share/backgrounds/beef
 echo -e "\n\nProcess Complete, enjoy my theme."
-sudo -k
 sleep 2s && exit

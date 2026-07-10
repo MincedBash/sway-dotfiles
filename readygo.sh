@@ -9,7 +9,7 @@ sudo pacman -Syu $(cat pkgs.txt)
 echo -e "\n\nCopying to .config"
 sleep 0.5
 cp -rv kitty nvim sway waybar rofi ~/.config/
-cp -v swaylock ~/.swaylock
+cp -rv swaylock ~/.swaylock
 
 sudo cp -rv SilentSDDM /usr/share/sddm/themes/silentbeef
 sudo cp -rv wallpaps /usr/share/backgrounds/beef

@@ -1,13 +1,34 @@
 {
-	"layer": "bottom",
-	"position": "top",
-	"exclusive": false,
-	"height": 30,
-	"width": 1910,
-//	"modules-right": ["battery", "cpu", "memory", "load"],
-	"modules-center": ["clock", "battery"],
-//	"modules-left": ["sway/workspaces"],
-	"spacing": 20,
-	"reload_style_on_change": true,
-	"sway/workspaces": { "persistent-workspaces": { "1": [], "2": [], "3": [] } }
+    "layer": "bottom",
+    "position": "top",
+    "exclusive": false,
+    "height": 30,
+    "width": 1910,
+
+    "modules-center": ["backlight", "clock", "battery", "pulseaudio"],
+
+    "spacing": 20,
+    "reload_style_on_change": true,
+
+    "sway/workspaces": {
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
+    },
+
+    "pulseaudio": {
+		"format": "   ",
+        "format-muted": "◇",
+        "format-icons": {
+            "default": "◇"
+        },
+        "scroll-step": 1
+	},
+
+	"backlight": {
+		"format": "   ",
+		"scroll-step": 1
+	}
 }

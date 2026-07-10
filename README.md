@@ -36,3 +36,6 @@ I am copying fonts into /usr/share/fonts because SDDM sometimes can't read from 
 ==> Change this line `sudo mkdir /usr/share/fonts/beef && sudo cp fonts/* /usr/share/fonts/beef`  
 to  
 ==> `mkdir ~/.local/share/fonts && cp fonts/* ~/.local/share/fonts`
+
+
+I didn't want to risk kitty config, if you want to use mine just rename beefkitty.conf to kitty.conf.

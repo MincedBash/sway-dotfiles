@@ -1,0 +1,13 @@
+{
+	"layer": "bottom",
+	"position": "top",
+	"exclusive": false,
+	"height": 30,
+	"width": 1910,
+//	"modules-right": ["battery", "cpu", "memory", "load"],
+	"modules-center": ["clock", "battery"],
+//	"modules-left": ["sway/workspaces"],
+	"spacing": 20,
+	"reload_style_on_change": true,
+	"sway/workspaces": { "persistent-workspaces": { "1": [], "2": [], "3": [] } }
+}

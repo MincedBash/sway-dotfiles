@@ -108,3 +108,6 @@ bindsym $mod+r mode "resize"
 	bindsym $mod+o output eDP-1 disable toggle
 	bindsym $mod+tab exec "rofi -show run"
 	bindsym $mod+ctrl+alt+return exec "systemctl suspend"
+
+	# Fucking Microslop Shit Copilot ASS
+	bindsym Super+Shift+F23 exec $term

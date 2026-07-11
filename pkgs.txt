@@ -1,1 +1,1 @@
-grim slurp kitty swayidle swaybg swaylock rofi neovim
+waybar grim slurp kitty swayidle swaybg swaylock rofi neovim
